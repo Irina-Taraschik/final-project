@@ -1,7 +1,9 @@
 .header
 	margin: 40px
 	display: flex
+	justify-content: space-between
 	font-family: Roboto
+	font-size: 18px
 	&__left
 		align-items: flex-start
 		display: flex
@@ -15,20 +17,33 @@
 			text-transform: uppercase
 			align-items: flex-start
 	&__logo
-		// justify-content: center
-		// vertical-align: middle
 		img
 			justify-content: center
 			width: 100%
 	&__right
 		padding-top: 10px
-
+		display: inline-flex
 		&-items
 			display: flex
-
 			li
 				list-style-type: none
 			a
 				color: black
 				text-transform: uppercase
-				padding-right: 20px
+				padding-left: 40px
+		&-icons
+			width: 100%
+			display: flex
+			i
+				padding-left: 20px
+				font-size: 30px
+
+@media (max-width: 1124px)
+	.header
+		font-size: 15px
+		&__right-icons
+			i
+				font-size: 20px
+
+@media (max-width: 1000px)
+	.header
