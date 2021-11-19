@@ -1,0 +1,95 @@
+.header
+	margin: 40px
+	display: flex
+	justify-content: space-between
+	font-family: Roboto
+	font-size: 18px
+	&__left
+		align-items: flex-start
+		display: flex
+		flex-direction: row
+		padding-top: 10px
+		li
+			list-style-type: none
+		a
+			padding-right: 40px
+			color: black
+			text-transform: uppercase
+			align-items: flex-start
+	&__logo
+		img
+			justify-content: center
+			width: 100%
+	&__right
+		padding-top: 10px
+		display: inline-flex
+		&-items
+			display: flex
+			padding-right: 10px
+			li
+				list-style-type: none
+			a
+				color: black
+				text-transform: uppercase
+				padding-left: 40px
+			&:first-child
+				padding-left: 0px
+		&-icons
+			width: 100%
+			display: flex
+			i
+				padding-left: 20px
+				font-size: 30px
+
+@media (max-width: 1124px)
+	.header
+		font-size: 15px
+		&__right-icons
+			i
+				font-size: 20px
+
+@media (max-width: 1000px)
+	.header
+		margin: 30px
+		&__left
+			a
+				padding-right: 20px
+		&__right
+			&-items
+				padding-left: 30px
+				a
+					padding-left: 20px
+
+@media (max-width: 860px)
+	.header
+		flex-direction: column
+		align-items: center
+		&__logo
+			order: -1
+			padding-bottom: 10px
+			img
+				padding-left: 35px
+		&__right
+			flex-direction: column
+			&-items
+				a
+					padding-left: 40px
+					padding-right: 20px
+			&-icons
+				justify-content: space-evenly
+				// padding-left: 20px
+				// i
+				// 	align-items: center
+
+@media (max-width: 700px)
+	.header
+		font-size: 13px
+		&__logo
+			img
+				padding-left: 40px
+				width: 80%
+
+@media (max-width: 430px)
+	.header
+		font-size: 10px
+		margin: 20px
