@@ -63,11 +63,11 @@
 @media (max-width: 860px)
 	.header
 		flex-direction: column
+		align-items: center
 		&__logo
 			order: -1
 			padding-bottom: 10px
 			img
-				width: 20%
 				padding-left: 35px
 		&__right
 			flex-direction: column
@@ -76,7 +76,10 @@
 					padding-left: 40px
 					padding-right: 20px
 			&-icons
-				padding-left: 20px
+				justify-content: space-evenly
+				// padding-left: 20px
+				// i
+				// 	align-items: center
 
 @media (max-width: 700px)
 	.header
@@ -84,7 +87,7 @@
 		&__logo
 			img
 				padding-left: 40px
-				width: 30%
+				width: 80%
 
 @media (max-width: 430px)
 	.header
