@@ -23,6 +23,7 @@
 		align-items: center
 		img
 			width: 100%
+			cursor: pointer
 	&__right
 		display: inline-flex
 		align-items: center
@@ -65,13 +66,12 @@
 
 @media (max-width: 860px)
 	.header
-		flex-direction: column
-		align-items: center
+		nav
+			flex-direction: column
+			align-items: center
 		&__logo
 			order: -1
-			padding-bottom: 10px
-			img
-				padding-left: 35px
+			padding-bottom: 13px
 		&__right
 			flex-direction: column
 			padding-left: 30px
