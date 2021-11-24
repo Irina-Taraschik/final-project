@@ -1,0 +1,170 @@
+.our-favorites
+	padding: 0px 40px
+	&__title
+		font-size: 30px
+		font-family: Roboto
+		font-weight: bold
+		line-height: 42px
+		text-align: center
+		letter-spacing: 0.5px
+		margin-bottom: 25px
+	&__sections
+		width: 100%
+		display: flex
+		justify-content: center
+		font-size: 19px
+		text-align: center
+		letter-spacing: 2px
+		text-transform: uppercase
+		cursor: pointer
+	&__section
+		padding: 0px 50px 10px 50px
+	&__line
+		margin-left: 10px
+		margin-right: 10px
+		border: none
+		background-color: #D3D4D5
+		height: 2px
+	&__items
+		padding: 20px 0px
+		display: flex
+	&__item
+		width: 100%
+		position: relative
+		img
+			width: 100%
+			padding: 0px 10px
+		&-title
+			font-size: 20px
+			font-weight: bold
+			padding-top: 10px
+			padding-left: 27px
+		&-line
+			margin-left: 27px
+			margin-right: 27px
+			border: none
+			background-color: #D3D4D5
+			height: 2px
+		&-description
+			font-size: 14px
+			padding: 10px 27px
+	&__buttons
+		position: absolute
+		top: 32%
+		left: 50%
+		transform: translate(-50%)
+		display: flex
+		flex-direction: column
+		align-items: center
+		button
+			margin-bottom: 10px
+			min-width: 200px
+
+@media (max-width: 1140px)
+	.our-favorites
+		&__buttons
+			button
+				font-size: 11px
+				min-width: 140px
+
+@media (max-width: 922px)
+	.our-favorites
+		&__item
+			&-title
+				font-size: 17px
+			&-description
+				font-size: 11px
+		&__buttons
+			button
+				font-size: 10px
+				min-width: 120px
+
+@media (max-width: 860px)
+	.our-favorites
+		&__buttons
+			button
+				min-width: 110px
+
+@media (max-width: 760px)
+	.our-favorites
+		&__title
+			font-size: 25px
+			margin-bottom: 15px
+		&__sections
+			font-size: 16px
+		&__items
+			display: flex
+			flex-direction: column
+		&__item
+			padding: 15px 0px
+			&-title
+				padding-left: 10px
+			&-line
+				margin: 0px 10px
+			&-description
+				padding: 10px 10px
+
+		&__buttons
+			flex-direction: row
+			top: 75%
+			left: 35%
+			button
+				margin: 0px 10px
+				padding: 10px 16px
+				min-width: 130px
+
+@media (max-width: 680px)
+	.our-favorites
+		&__title
+			font-size: 22px
+			margin-bottom: 10px
+		&__sections
+			font-size: 13px
+		&__section
+			padding: 0px 30px 10px 30px
+		&__buttons
+			top: 72%
+			button
+				min-width: 110px
+
+@media (max-width: 576px)
+	.our-favorites
+		&__buttons
+			top: 68%
+			left: 40%
+			button
+				min-width: 100px
+				padding: 7px 10px
+
+@media (max-width: 500px)
+	.our-favorites
+		&__sections
+			font-size: 11px
+		&__section
+			padding: 0px 10px 10px 10px
+		&__item
+			width: 100%
+			// &-title
+			// 	font-size: 15px
+			// 	padding-top: 10px
+			// 	padding-left: 0px
+
+			img
+				width: 100%
+				padding: 0px
+		&__buttons
+			top: 64%
+			left: 45%
+			button
+				min-width: 90px
+				padding: 5px 6px
+
+@media (max-width: 416px)
+	.our-favorites
+		&__buttons
+			top: 56%
+			left: 50%
+			transform: translate(-50%)
+			button
+				min-width: 78px
+				padding: 4px 5px

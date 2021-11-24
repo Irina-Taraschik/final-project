@@ -1,0 +1,60 @@
+.runner
+	position: relative
+	margin-bottom: 80px
+	&__title
+		color: white
+		position: absolute
+		font-size: 35px
+		font-weight: bold
+		top: 60%
+		left: 7%
+	&__text
+		color: white
+		position: absolute
+		font-size: 18px
+		top: 70%
+		left: 7%
+	&__img
+		img
+			width: 100%
+			display: flex
+	&__buttons
+		width: 85%
+		position: absolute
+		top: 80%
+		left: 50%
+		transform: translate(-50%)
+		.button
+			margin-right: 30px
+		&:last-child
+			margin-right: 0px
+
+@media (max-width: 1030px)
+	.runner
+		&__title
+			font-size: 30px
+		&__text
+			font-size: 16px
+		&__buttons
+			.button
+				padding: 7px 5px
+				font-size: 13px
+
+@media (max-width: 1030px)
+	.runner
+		&__title
+			top: 55%
+		&__buttons
+			top: 83%
+
+@media (max-width: 550px)
+	.runner
+		&__title
+			font-size: 21px
+		&__text
+			font-size: 15px
+		&__buttons
+			.button
+				font-size: 10px
+				min-width: 90px
+				padding: 4px 5px
