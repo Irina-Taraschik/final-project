@@ -1,2 +1,74 @@
 .shop
-	margin: 0px 30px
+	margin: 0px 60px 50px 60px
+	&__title
+		font-size: 26px
+		padding-bottom: 18px
+		padding-left: 10px
+	&__items
+		display: flex
+	&__item
+		padding: 10px
+		width: 100%
+		&-img
+			img
+				width: 100%
+		&-title
+			font-weight: bold
+			font-size: 18px
+			padding-top: 10px
+
+@media (max-width: 1100px)
+	.shop
+		&__title
+			padding-bottom: 0px
+
+@media (max-width: 960px)
+	.shop
+		&__item
+			&-title
+				font-size: 15px
+			&-description
+				font-size: 12px
+
+@media (max-width: 760px)
+	.shop
+		&__title
+			font-size: 25px
+
+@media (max-width: 650px)
+	.shop
+		margin: 0px 40px 50px 40px
+		&__title
+			font-size: 20px
+		&__item
+			padding: 5px
+			&-title
+				font-size: 13px
+			&-description
+				font-size: 11px
+
+@media (max-width: 600px)
+	.shop
+		&__title
+			font-size: 18px
+		&__description
+			font-size: 12px
+		&__buttons
+			margin-top: 11px
+		button
+			margin: 7px
+			min-width: 110px
+
+@media (max-width: 524px)
+	.shop
+		&__title
+			font-size: 18px
+
+@media (max-width: 400px)
+	.shop
+		&__title
+			font-size: 15px
+
+		// &__items
+		// 	display: flex
+		// 	flex-direction: column			
