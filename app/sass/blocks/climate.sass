@@ -1,0 +1,70 @@
+.climate
+	margin: 50px 0px 90px 0px
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__title
+		font-size: 26px
+		font-weight: bold
+		padding: 0px 40px 20px 40px
+	&__description
+		font-size: 16px
+		padding: 0px 40px
+	&__button
+		margin-top: 15px
+		button
+			margin: 10px
+			min-width: 320px
+
+@media (max-width: 1000px)
+	.climate
+		margin: 40px 0px 50px 0px
+		&__button
+			button
+				margin: 10px
+				min-width: 290px
+
+@media (max-width: 760px)
+	.climate
+		margin: 40px 0px 60px 0px
+		&__title
+			font-size: 25px
+
+@media (max-width: 650px)
+	.climate
+		&__title
+			font-size: 20px
+			padding-bottom: 0px
+		&__description
+			font-size: 14px
+		&__button
+			margin-top: 12px
+			button
+				margin: 10px
+				min-width: 140px
+
+@media (max-width: 524px)
+	.climate
+		margin: 40px 0px 40px 0px
+		&__title
+			font-size: 18px
+		&__description
+			font-size: 12px
+		&__button
+			margin-top: 11px
+			button
+				margin: 7px
+				min-width: 110px
+
+@media (max-width: 400px)
+	.climate
+		margin-top: 20px
+		&__title
+			font-size: 15px
+		&__description
+			font-size: 11px
+		&__button
+			margin-top: 10px
+			button
+				margin: 6px
+				min-width: 90px
