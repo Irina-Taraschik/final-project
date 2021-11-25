@@ -1,15 +1,61 @@
 .seasons
-	margin: 20px 0px
+	margin: 50px 0px 100px 0px
 	display: flex
 	flex-direction: column
 	align-items: center
 	&__title
 		font-size: 26px
 		font-weight: bold
-		padding-bottom: 25px
+		padding-bottom: 20px
 	&__description
 		font-size: 16px
 	&__buttons
-		&-black
-			background-color: white
-			color: black
+		margin-top: 15px
+		button
+			margin: 10px
+			min-width: 170px
+
+@media (max-width: 760px)
+	.seasons
+		margin-top: 40px
+		&__title
+			font-size: 25px
+
+@media (max-width: 650px)
+	.seasons
+		margin-top: 30px
+		&__title
+			font-size: 20px
+			padding-bottom: 0px
+		&__description
+			font-size: 14px
+		&__buttons
+			margin-top: 12px
+		button
+			margin: 10px
+			min-width: 140px
+
+@media (max-width: 524px)
+	.seasons
+		&__title
+			font-size: 18px
+		&__description
+			font-size: 12px
+		&__buttons
+			margin-top: 11px
+		button
+			margin: 7px
+			min-width: 110px
+
+@media (max-width: 400px)
+	.seasons
+		margin-top: 20px
+		&__title
+			font-size: 15px
+		&__description
+			font-size: 11px
+		&__buttons
+			margin-top: 10px
+		button
+			margin: 6px
+			min-width: 90px
