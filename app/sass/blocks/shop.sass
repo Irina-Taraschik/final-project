@@ -47,28 +47,18 @@
 			&-description
 				font-size: 11px
 
-@media (max-width: 600px)
-	.shop
-		&__title
-			font-size: 18px
-		&__description
-			font-size: 12px
-		&__buttons
-			margin-top: 11px
-		button
-			margin: 7px
-			min-width: 110px
-
 @media (max-width: 524px)
 	.shop
 		&__title
 			font-size: 18px
+			display: flex
+			justify-content: center
+		&__items
+			flex-direction: column
+		&__item
+			padding: 20px
 
 @media (max-width: 400px)
 	.shop
 		&__title
 			font-size: 15px
-
-		// &__items
-		// 	display: flex
-		// 	flex-direction: column			
