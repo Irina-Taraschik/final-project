@@ -1,0 +1,92 @@
+.shop
+	padding: 0px 60px 50px 60px
+	position: relative
+	&__title
+		font-size: 26px
+		padding-bottom: 18px
+		padding-left: 10px
+	&__items
+		display: flex
+	&__item
+		padding: 10px
+		width: 100%
+		&-img
+			img
+				width: 100%
+		&-title
+			font-weight: bold
+			font-size: 18px
+			padding-top: 10px
+	&__arrows
+		font-size: 30px
+	&__arrow
+		&-left
+			position: absolute
+			top: 35%
+			left: 2%
+		&-right
+			position: absolute
+			top: 35%
+			right: 2%
+
+@media (max-width: 1100px)
+	.shop
+		&__title
+			padding-bottom: 0px
+
+@media (max-width: 960px)
+	.shop
+		&__item
+			&-title
+				font-size: 15px
+			&-description
+				font-size: 12px
+
+@media (max-width: 760px)
+	.shop
+		&__title
+			font-size: 25px
+		&__arrow
+			&-left
+				top: 30%
+				left: 3%
+			&-right
+				top: 30%
+				right: 3%
+
+@media (max-width: 650px)
+	.shop
+		padding: 0px 40px 50px 40px
+		&__title
+			font-size: 20px
+		&__item
+			padding: 5px
+			&-title
+				font-size: 13px
+			&-description
+				font-size: 11px
+		&__arrows
+			font-size: 25px
+		&__arrow
+			&-left
+				left: 2%
+			&-right
+				right: 2%
+
+@media (max-width: 524px)
+	.shop
+		&__title
+			font-size: 18px
+			display: flex
+			justify-content: center
+		&__items
+			flex-direction: column
+		&__item
+			padding: 20px
+		&__arrows
+			display: none
+
+@media (max-width: 400px)
+	.shop
+		&__title
+			font-size: 15px

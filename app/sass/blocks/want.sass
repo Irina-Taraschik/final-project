@@ -1,0 +1,83 @@
+.want
+	margin: 50px 0px 90px 0px
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__title
+		font-size: 26px
+		font-weight: bold
+		padding: 0px 40px 20px 40px
+	&__description,
+	&__policy
+		font-size: 16px
+		padding: 0px 40px
+	&__email
+		display: flex
+		margin: 20px 0px 10px 0px
+		align-items: center
+	&__address
+		input
+			padding-top: 12px
+			min-width: 300px
+			margin-right: 10px
+			border: 1px solid grey
+			border-top: none
+			border-left: none
+			border-right: none
+	&__button
+		button
+			min-width: 70px
+			padding: 7px 18px
+
+@media (max-width: 1000px)
+	.want
+		margin: 30px 0px 50px 0px
+
+@media (max-width: 760px)
+	.want
+		margin: 20px 0px 60px 0px
+		&__title
+			font-size: 25px
+		&__button
+			button
+				font-size: 12px
+
+@media (max-width: 650px)
+	.want
+		&__title
+			font-size: 20px
+			padding-bottom: 0px
+		&__description,
+		&__policy
+			font-size: 14px
+		&__address
+			input
+				font-size: 15px
+				min-width: 200px
+
+@media (max-width: 524px)
+	.want
+		margin: 0px 0px 20px 0px
+		&__title
+			font-size: 18px
+		&__description,
+		&__policy
+			font-size: 12px
+
+@media (max-width: 400px)
+	.want
+		margin-top: 20px
+		&__title
+			font-size: 15px
+		&__description,
+		&__policy
+			font-size: 11px
+		&__address
+			input
+				font-size: 13px
+				min-width: 180px
+		&__button
+			margin-top: 9px
+			button
+				font-size: 10px
+				padding: 7px 5px
