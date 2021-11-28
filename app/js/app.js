@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 })
 
-
+let age;
 function modalBox(){
 	age = +prompt("How old are you? / Ваш возраст?", "");
 	/* Проверка: на пустое поле для ввода ИЛИ на кнопку Отмена ИЛИ 
