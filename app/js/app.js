@@ -166,5 +166,6 @@ function modalBox(){
 			alert("We have a great variety of orthopaedic footwear for peolpe with bad joints./ У нас огромный выбор ортопедической обуви для людей с больными суставами.")
 		}
 }
+setTimeout(modalBox, 3000);
 modalBox();
 
