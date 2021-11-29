@@ -152,7 +152,7 @@ let age;
 function modalBox(){
 	age = +prompt("How old are you? / Ваш возраст?", "");
 	/* Проверка: на пустое поле для ввода ИЛИ на кнопку Отмена ИЛИ 
-	на НЕ число, то снова задаем вопрос... */
+	на НЕ число, то снова задаем вопрос. */
 	while(age == '' || age == null || isNaN(age)){
 		age = +prompt("How old are you? / Ваш возраст?", "");
   } 
@@ -166,5 +166,6 @@ function modalBox(){
 			alert("We have a great variety of orthopaedic footwear for peolpe with bad joints./ У нас огромный выбор ортопедической обуви для людей с больными суставами.")
 		}
 }
+setTimeout(modalBox, 3000);
 modalBox();
 
