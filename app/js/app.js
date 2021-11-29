@@ -165,8 +165,5 @@ function modalBox(){
 	} else {
 		alert("We have a great variety of orthopaedic footwear for peolpe with bad joints./ У нас огромный выбор ортопедической обуви для людей с больными суставами.")
 	}
-
 }
-setTimeout(modalBox, 2000);
-// modalBox();
-
+setTimeout(modalBox, 1000);
