@@ -153,19 +153,20 @@ function modalBox(){
 	age = +prompt("How old are you? / Ваш возраст?", "");
 	/* Проверка: на пустое поле для ввода ИЛИ на кнопку Отмена ИЛИ 
 	на НЕ число, то снова задаем вопрос. */
-	while(age == '' || age == null || isNaN(age)){
+	while(age == '' || age == null || isNaN(age)) {
 		age = +prompt("How old are you? / Ваш возраст?", "");
-  } 
-  if (age < 16){
-	  alert("You're too young to shop online./ Вы слишком молоды, чтобы делать онлайн покупки.")
+	}
+	if (age < 16) {
+		alert("You're too young to shop online./ Вы слишком молоды, чтобы делать онлайн покупки.")
 	} else if (age < 40) {
 		alert("We have a great choice for young and energetic peolpe./ У нас великолепный выбор для молодых и активных людей")
 	} else if (age < 60) {
 		alert("You'll find the most comfortable sports footwear here./ У нас самая удобная спортивная обувь на любой вкус.")
-		} else {
-			alert("We have a great variety of orthopaedic footwear for peolpe with bad joints./ У нас огромный выбор ортопедической обуви для людей с больными суставами.")
-		}
+	} else {
+		alert("We have a great variety of orthopaedic footwear for peolpe with bad joints./ У нас огромный выбор ортопедической обуви для людей с больными суставами.")
+	}
+
 }
-setTimeout(modalBox, 3000);
-modalBox();
+setTimeout(modalBox, 2000);
+// modalBox();
 
