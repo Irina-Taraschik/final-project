@@ -152,7 +152,7 @@ let age;
 function modalBox(){
 	age = +prompt("How old are you? / Ваш возраст?", "");
 	/* Проверка: на пустое поле для ввода ИЛИ на кнопку Отмена ИЛИ 
-	на НЕ число, то снова задаем вопрос... */
+	на НЕ число, то снова задаем вопрос. */
 	while(age == '' || age == null || isNaN(age)){
 		age = +prompt("How old are you? / Ваш возраст?", "");
   } 
